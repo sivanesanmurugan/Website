@@ -154,7 +154,7 @@ const Signinfunction = () => {
     sessionStorage.setItem("userId", loggedInUser.id);
     if (emailRef.value === "admin@admin.com")
       location.replace("/admin/admin.html");
-    else location.replace("/index.html");
+    else location.replace("/Website/index.html");
   }
 };
 // email checking
@@ -192,11 +192,11 @@ const Signupfunction = () => {
     password: passwordRef.value,
   });
   localStorage.setItem("user", JSON.stringify(user));
-  location.href = "/pages/login.html";
+  location.href = "/Website/pages/login.html";
 };
 //signout section
 const SignOutfunction = () => {
-  location.replace("/pages/login.html");
+  location.replace("/Website/pages/login.html");
 };
 // loading Products in admin page
 const loadAdminHomePage = () => {
@@ -265,7 +265,7 @@ const Addproduct = () => {
     thumbnail: imageRef.value,
   });
   localStorage.setItem("product", JSON.stringify(products));
-  location.href = "/admin/admin.html";
+  location.href = "/Website/admin/admin.html";
 };
 // edit the product
 
