@@ -82,7 +82,7 @@ window.addEventListener("load", () => {
   if (location.pathname === "/admin/admin.html") {
     loadAdminHomePage();
   }
-  if (location.pathname === "/index.html") {
+  if (location.pathname === "/Website/index.html") {
     loadHomePage();
   }
   if (location.pathname === "/admin/add_product.html") {
