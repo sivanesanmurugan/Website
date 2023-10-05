@@ -2,12 +2,12 @@
     width: 30vw;
 }
 .bgsignin{
-    background-image: url(/css/bg.jpg);
+    background-image: url(/Website/css/bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .bgsignup{
-    background-image: url(/css/bg1.jpg);
+    background-image: url(/Website/css/bg1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
