@@ -248,6 +248,7 @@ const loadHomePage = () => {
   }
   productsRef.innerHTML = productbody;
 };
+loadHomePage();
 
 // Add products
 const Addproduct = () => {
