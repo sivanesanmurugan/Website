@@ -79,13 +79,13 @@ window.addEventListener("load", () => {
   if (!localStorage.getItem("product")) {
     localStorage.setItem("product", JSON.stringify(Products));
   }
-  if (location.pathname === "/admin/admin.html") {
+  if (location.pathname === "/Website/admin/admin.html") {
     loadAdminHomePage();
   }
   if (location.pathname === "/Website/index.html") {
     loadHomePage();
   }
-  if (location.pathname === "/admin/add_product.html") {
+  if (location.pathname === "/Website/admin/add_product.html") {
     let parameterurl = window.location.search;
     let urlparams = new URLSearchParams(parameterurl);
     let productid = urlparams.get("id");
@@ -97,14 +97,14 @@ window.addEventListener("load", () => {
       pushproduct(product);
     }
   }
-  if (location.pathname === "/pages/cart.html") {
+  if (location.pathname === "/Website/pages/cart.html") {
     loadCartProduct();
   }
 
-  if (location.pathname === "/pages/order.html") {
+  if (location.pathname === "/Website/pages/order.html") {
     loadOrderPage();
   }
-  if (location.pathname === "/admin/orders.html") {
+  if (location.pathname === "/Website/admin/orders.html") {
     loadAdminOrder();
   }
 });
@@ -153,7 +153,7 @@ const Signinfunction = () => {
   } else {
     sessionStorage.setItem("userId", loggedInUser.id);
     if (emailRef.value === "admin@admin.com")
-      location.replace("/admin/admin.html");
+      location.replace("/Website/admin/admin.html");
     else location.replace("/Website/index.html");
   }
 };
@@ -270,7 +270,7 @@ const Addproduct = () => {
 // edit the product
 
 const editProductfunction = (id) => {
-  location.href = `/admin/add_product.html?id=${id}`;
+  location.href = `/Website/admin/add_product.html?id=${id}`;
 };
 //push product
 const pushproduct = (product) => {
@@ -296,7 +296,7 @@ const addToCartfunction = (id) => {
   let Addtocart = JSON.parse(localStorage.getItem("product"));
   const products = Addtocart.find((product) => product.id === parseInt(id));
   if (!sessionStorage.getItem("userId")) {
-    location.replace("/pages/login.html");
+    location.replace("/Website/pages/login.html");
   } else {
     let userId = parseInt(sessionStorage.getItem("userId"));
     let cart = [];
@@ -372,12 +372,12 @@ const checkOutFunction = () => {
       localStorage.setItem("cart", JSON.stringify(othersCart));
       localStorage.setItem("orders", JSON.stringify(orders));
       // updateCartCount();
-      location.href = "/index.html";
+      location.href = "/Website/index.html";
     } else {
-      Location.href = "/index.html";
+      Location.href = "/Website/index.html";
     }
   } else {
-    Location.href = "/pages/login.html";
+    Location.href = "/Website/pages/login.html";
   }
 };
 // load the user orders
@@ -409,10 +409,10 @@ const loadOrderPage = () => {
       }
       tableRef.innerHTML = body;
     } else {
-      location.href = "/index.html";
+      location.href = "/Website/index.html";
     }
   } else {
-    location.href = "/pages/login.html";
+    location.href = "/Website/pages/login.html";
   }
 };
 // admin order load
@@ -470,9 +470,9 @@ const loadAdminOrder = () => {
         }
       }
     } else {
-      location.href = "/index.html";
+      location.href = "/Website/index.html";
     }
   } else {
-    location.href = "/pages/login.html";
+    location.href = "/Website/pages/login.html";
   }
 };
