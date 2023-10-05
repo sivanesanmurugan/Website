@@ -1,0 +1,30 @@
+.signin{
+    width: 30vw;
+}
+.bgsignin{
+    background-image: url(/css/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgsignup{
+    background-image: url(/css/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.signup{
+    width: 30vw;
+    height: 85vh;
+}
+.Add_Product{
+    width: 30vw;
+    height: 85vh;
+}
+.but{
+    margin-left: 10px !important;
+}
+.but1{
+    margin-left: 10px !important;
+}
+.adminlogin{
+    width: 30vw;
+}

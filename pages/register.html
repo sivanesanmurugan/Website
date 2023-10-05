@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/css/style.css" />
+    <script src="/js/script.js"></script>
+  </head>
+  <body class="bgsignup">
+    <div class="fs-1 d-flex justify-content-center">
+      <p>Please sign Up</p>
+    </div>
+    <div
+      class="signup container p-4 rounded justify-content-center align-items-center form-control bg-secondary-50"
+    >
+      <div class="row">
+        <div class="mb-3">
+          <label for="regemail" class="form-label"
+            >Email address</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="regemail"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="regname" class="form-label">Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="regname"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="regpassword" class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            id="regpassword"
+            aria-describedby="emailHelp"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="regconfrimpassword" class="form-label"
+            >confrim Password</label
+          >
+          <input
+            type="password"
+            class="form-control"
+            id="regconfrimpassword"
+            aria-describedby="emailHelp"
+          />
+          <p id="error" class="text-danger"></p>
+        </div>
+        <p>Already an user ? <a href="/pages/login.html">Sign In</a></p>
+        <div class="d-flex justify-content-center">
+          <button class="mt-3 py-2 w-50 mb-3 rounded btn btn-primary" onclick="Signupfunction()">
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
