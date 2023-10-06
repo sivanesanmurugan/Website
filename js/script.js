@@ -63,45 +63,6 @@ let Products = [
     category: "smartphones",
     thumbnail: "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
   },
-  {
-    id: 6,
-    title: "MacBook Pro",
-    description:
-      "MacBook Pro 2021 with mini-LED display may launch between September, November",
-    price: 1749,
-    discountPercentage: 11.02,
-    rating: 4.57,
-    stock: 83,
-    brand: "Apple",
-    category: "laptops",
-    thumbnail: "https://i.dummyjson.com/data/products/6/thumbnail.png",
-  },
-  {
-    id: 7,
-    title: "Samsung Galaxy Book",
-    description:
-      "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
-    price: 1499,
-    discountPercentage: 4.15,
-    rating: 4.25,
-    stock: 50,
-    brand: "Samsung",
-    category: "laptops",
-    thumbnail: "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
-  },
-  {
-    id: 8,
-    title: "Microsoft Surface Laptop 4",
-    description:
-      "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
-    price: 1499,
-    discountPercentage: 10.23,
-    rating: 4.43,
-    stock: 68,
-    brand: "Microsoft Surface",
-    category: "laptops",
-    thumbnail: "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
-  },
 ];
 // users
 let UsersIntinal = [
@@ -251,7 +212,7 @@ const loadAdminHomePage = () => {
     <td>${product.description.substring(0, 29)}</td>
     <td>${product.price}</td>
     <td>
-      <button class="btn-outline-dark rounded" onClick= "editProductfunction(${
+      <button class="btn-outline-dark rounded"onClick="editProductfunction(${
         product.id
       })">edit</button>
       <button class="btn-outline-danger rounded" onClick="deleteProductfunction(${
@@ -261,7 +222,6 @@ const loadAdminHomePage = () => {
   }
   productsRef.innerHTML = body;
 };
-loadAdminHomePage();
 // delete product - admin page
 const deleteProductfunction = (id) => {
   const products = JSON.parse(localStorage.getItem("product"));
@@ -274,7 +234,7 @@ const loadHomePage = () => {
   const productsRef = document.getElementById("Productbody");
   const products = JSON.parse(localStorage.getItem("product"));
   let productbody = "";
-  for (let product of products){
+  for (let product of products) {
     productbody += ` <div class="col-3 mt-4">
     <div
       class="border rounded p-2 bg-primary-subtle border-primary-subtle w-100 d-flex flex-column"
@@ -312,9 +272,7 @@ const Addproduct = () => {
 
 const editProductfunction = (id) => {
   location.href = `/Website/admin/add_product.html?id=${id}`;
-  loadAdminHomePage();
 };
-
 //push product
 const pushproduct = (product) => {
   const nameRef = document.getElementById("name");
