@@ -251,7 +251,7 @@ const loadAdminHomePage = () => {
     <td>${product.description.substring(0, 29)}</td>
     <td>${product.price}</td>
     <td>
-      <button class="btn-outline-dark rounded"onClick="editProductfunction(${
+      <button class="btn-outline-dark rounded" onClick= "editProductfunction(${
         product.id
       })">edit</button>
       <button class="btn-outline-danger rounded" onClick="deleteProductfunction(${
@@ -261,6 +261,7 @@ const loadAdminHomePage = () => {
   }
   productsRef.innerHTML = body;
 };
+loadAdminHomePage();
 // delete product - admin page
 const deleteProductfunction = (id) => {
   const products = JSON.parse(localStorage.getItem("product"));
@@ -311,7 +312,9 @@ const Addproduct = () => {
 
 const editProductfunction = (id) => {
   location.href = `/Website/admin/add_product.html?id=${id}`;
+  loadAdminHomePage();
 };
+
 //push product
 const pushproduct = (product) => {
   const nameRef = document.getElementById("name");
