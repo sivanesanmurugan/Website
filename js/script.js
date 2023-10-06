@@ -477,3 +477,4 @@ const loadAdminOrder = () => {
     location.href = "/Website/pages/login.html";
   }
 };
+loadHomePage();
