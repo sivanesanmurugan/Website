@@ -273,7 +273,7 @@ const loadHomePage = () => {
   const productsRef = document.getElementById("Productbody");
   const products = JSON.parse(localStorage.getItem("product"));
   let productbody = "";
-  for (let product of products) {
+  for (let product of products){
     productbody += ` <div class="col-3 mt-4">
     <div
       class="border rounded p-2 bg-primary-subtle border-primary-subtle w-100 d-flex flex-column"
