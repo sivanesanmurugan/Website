@@ -63,6 +63,45 @@ let Products = [
     category: "smartphones",
     thumbnail: "https://i.dummyjson.com/data/products/5/thumbnail.jpg",
   },
+  {
+    id: 6,
+    title: "MacBook Pro",
+    description:
+      "MacBook Pro 2021 with mini-LED display may launch between September, November",
+    price: 1749,
+    discountPercentage: 11.02,
+    rating: 4.57,
+    stock: 83,
+    brand: "Apple",
+    category: "laptops",
+    thumbnail: "https://i.dummyjson.com/data/products/6/thumbnail.png",
+  },
+  {
+    id: 7,
+    title: "Samsung Galaxy Book",
+    description:
+      "Samsung Galaxy Book S (2020) Laptop With Intel Lakefield Chip, 8GB of RAM Launched",
+    price: 1499,
+    discountPercentage: 4.15,
+    rating: 4.25,
+    stock: 50,
+    brand: "Samsung",
+    category: "laptops",
+    thumbnail: "https://i.dummyjson.com/data/products/7/thumbnail.jpg",
+  },
+  {
+    id: 8,
+    title: "Microsoft Surface Laptop 4",
+    description:
+      "Style and speed. Stand out on HD video calls backed by Studio Mics. Capture ideas on the vibrant touchscreen.",
+    price: 1499,
+    discountPercentage: 10.23,
+    rating: 4.43,
+    stock: 68,
+    brand: "Microsoft Surface",
+    category: "laptops",
+    thumbnail: "https://i.dummyjson.com/data/products/8/thumbnail.jpg",
+  },
 ];
 // users
 let UsersIntinal = [
