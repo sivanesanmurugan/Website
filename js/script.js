@@ -345,7 +345,7 @@ const loadHomePage = () => {
   }
   productsRef.innerHTML = productbody;
 };
-loadHomePage();
+// loadHomePage();
 
 // Add products
 const Addproduct = () => {
